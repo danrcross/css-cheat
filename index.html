@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/stylesheet.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS Snippet Cheatsheet</h1>
+            <p>A cheatsheet for some useful CSS syntax</p>
+        </header>
+        <section>
+            <div>
+                <h2>Flexbox Row</h2>
+                <h3>These properties will create a flexbox row layout:</h3>
+                <pre>           
+                     .row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                </pre>
+            </div>
+            <div>
+                <h2>:hover Pseudo-Class Selector</h2>
+                <h3>This pseudo-class selector will change the font style to italic when the cursor hovers over the selected element(s):</h3>
+                <pre>
+                    .class:hover {
+                        font-style: italic;
+                    }
+                </pre>
+            </div>
+            <div>
+                <h2>::after Pseudo-Element Selector</h2>
+                <h3>This pseudo-element selector will display "Wow!" in red text on a gray background after the selected element(s): </h3>
+                <pre>
+                    .element::after {
+                        content: "Wow!";
+                        background-color: gray;
+                        color: red;
+                    }
+                </pre>
+            </div>
+            <div>
+                <h2>Variables</h2>
+                <h3>The first snippet will assign the color "blue" to the variable "--maincolor". The second snippet will call that variable, and assign "blue" to all "p" elements.</h3>
+                <pre>
+                    :root {
+                        --maincolor: blue;
+                    }
+
+                    p {
+                        color: var(--maincolor)
+                    }
+                </pre>
+            </div>
+            <div>
+                <h2>Attribute Selectors</h2>
+                <h3>This style of selector ( using [ ] ) allows you to select elements that have been assigned certain attributes. This one will assign a bold font style to all anchor elements that contain an href= attribute ending in .css:</a></h3>
+                <pre>
+                a[href$=".css"] {
+                    font-style: bold;
+                }
+                </pre>
+            </div>
+            <div>
+                <h2>"Nth Child" Selector (Even)</h2>
+                <h3>This pseudo-class will give all even-numbered list items a red font color:</h3>
+                <pre>
+                    li:nthchild(even){
+                    color: red;
+                    }
+                </pre>
+            </div>
+        </section>
+
+    </body>
+</html>

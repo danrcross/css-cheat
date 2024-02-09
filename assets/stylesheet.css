@@ -1,0 +1,54 @@
+* {
+    color: black;
+    background-color: blanchedalmond;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    div {
+        border: solid rgb(93, 93, 250) 1px;
+        border-radius: 5px;
+        width: 400px;
+        min-width: 30%;
+        margin: 10px;
+        background: linear-gradient(rgb(93, 93, 250), rgb(193, 22, 64));
+        transition: background 4s;
+
+        * {
+            background: linear-gradient(white, gray);
+            text-align: center;
+        }
+
+        h3 {
+            padding: 5px;
+        }
+
+        h2 {
+            border-style: ridge;
+            border-color: rgb(193, 22, 64);
+            border-width: 1px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    }
+}
+
+
+
+div:hover * {
+    color: blue;
+    transition: margin-right 1s;
+}
+
+div:hover {
+    background: red;
+    
+}
