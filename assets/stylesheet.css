@@ -7,6 +7,8 @@ header {
     text-align: center;
 }
 
+
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +43,9 @@ section {
     }
 }
 
-
+div pre {
+    text-align: left;
+}
 
 div:hover * {
     color: blue;
